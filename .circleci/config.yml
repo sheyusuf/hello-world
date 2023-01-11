@@ -1,5 +1,4 @@
-
-version: 2.1 
+version: 2.1
 
 workflows:
   test-env-vars:
@@ -13,8 +12,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "what is your name?"
+          name: "echo an env var that is part of our project"
           command: |
+            MY_ENV_VAR = "Shehu Yusuf"
             echo $MY_ENV_VAR
-          environment:
-            MY_ENV_VAR: "Shehu Yusuf"
+            
