@@ -13,6 +13,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "echo an env var that is part of our project"
+          name: "what is your name?"
           command: |
             echo $MY_ENV_VAR
+          environment:
+            MY_ENV_VAR: "Shehu Yusuf"
